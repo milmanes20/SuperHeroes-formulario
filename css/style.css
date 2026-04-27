@@ -7,8 +7,11 @@
 
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
     margin: 0;
-   font-family: 'Arial', sans-serif;
+   font-family: 'Roboto','Arial', sans-serif;
    background-color: #f5f5f5;
    
  }
@@ -42,6 +45,7 @@ body {
    justify-content: center;
    gap: 20px;
    margin: 35px auto;
+   flex: 1;
    
    /*max-width: 1000px;*/
  }
@@ -130,11 +134,9 @@ body {
  footer {
    background-color: #00669F;
    color: white;
-   
     text-align: center;
-    
+  
    font-size: 14px;
-   bottom: 0;
    width: 100%;
    display: flex;
    justify-content: flex-end;
@@ -155,6 +157,595 @@ body {
     color: white;
     font-weight: 800;
  }
+
+ /*.agregar-heroe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00669F;
+  color: white;
+  width: 150px;
+  height: 150px;
+  border: none;
+  overflow: hidden;
+ }*/
+ 
+
+
+/* agregar boton mas para insrtar nuevo heroe*/
+.add-heroe { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  background-color: #00669f;
+  color: white;
+  width: 82px;
+  height: 82px;
+  border: none;
+  border-radius: 50px;
+  font-size: 80px;
+}
+
+
+.agregar-heroe a,
+.add-heroe  {
+  text-decoration: none;
+}
+
+
+.con-reg-ing{
+  background-color: black;
+  color:white;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  gap: 20px;
+ 
+}
+
+.con-reg-ing a{
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: 200;
+}
+/***************************** formulario************************************/
+.radio-group, .checkbox-group{
+  margin-top: 10px;
+  margin-right: 5%;
+
+}
+.radio-group label, .checkbox-group label{
+  font-weight: normal;
+  display: flex;
+  align-items:center;
+  gap: 10px;
+  font-size: 14px;
+}
+.form-contenedor{
+  background-color: #00669F ;
+  color:#f5f5f5;
+  border-radius: 25px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  height: 700px;
+  padding: 20px;
+}
+/*
+form{
+  background-color: #00669F;
+  color: #f5f5f5;
+
+}*/
+
+
+  .radio-group label, .checkbox-group label{
+    font-weight: normal;
+    display: flex;
+    align-items:center;
+    gap: 10px;
+    font-size: 14px;
+  }
+  .form-contenedor{
+    background-color: #00669F ;
+    color:#f5f5f5;
+    border-radius: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 700px;
+    padding: 20px;
+  }
+ /*
+  form{
+    background-color: #00669F;
+    color: #f5f5f5;
+ 
+  }*/
+ 
+  form{
+    background-color: #00669F;
+ 
+  }
+  .form-row{
+    display: flex;
+    gap: 50px;
+    padding-top: 10px;
+    margin-right: 70px;
+    padding-bottom: 10px;
+    width: 100%;
+    background-color: blueviolet;
+ 
+    
+  }
+  
+  form label{
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+ 
+  }
+  form h1,p {
+    text-align: center;
+    
+  }
+ 
+  form button{
+    background-color: #1CD1B0;
+  }
+ 
+  input[type="text"],
+  input[type="date"],
+  select,
+  textarea,
+  input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 14px;
+    margin-top: 3%;
+ 
+  }
+  textarea{
+    height: 250px;
+    resize: none;
+  }
+   hr{
+    margin: 20px 0;
+   }
+  form button{
+    border: none;
+    width: 70%;
+    font-size: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 2%;
+    font-weight: bold;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  form button:hover{
+    background-color:#1ad2a3; 
+  }
+ 
+  .form-row > div{
+    flex: 1; 
+  }
+ 
+ /* RESPONSIVA*/
+ @media (max-width: 768px) {
+  .form-contenedor {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    margin-top: 30px;
+  }
+ 
+  .form-row {
+    flex-direction: column;
+    gap: 15px;
+    margin-right: 0;
+  }
+ 
+  input[type="text"],
+  input[type="date"],
+  select,
+  textarea,
+  input[type="file"] {
+    font-size: 16px;
+  }
+ 
+  .div-volver {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+ 
+  .btn-volver {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+  }
+ }
+ 
+ /*********************************/
+ 
+ 
+ 
+ 
+ 
+  /********************************************/
+ 
+  .btn-mas{
+    position: fixed;
+   top: 600px;
+   right: 10px;
+   background-color: #00669F;
+   color: white;
+   width: 62px;
+   height: 62px;
+   border: none;
+   font-size: 50px;
+   border-radius: 50px;
+   cursor: pointer;
+  }
+  .div-volver{
+    position: static;
+   
+  }
+   .btn-volver{
+    background-color: #00669F;
+   color: white;
+   width: 62px;
+   height: 62px;
+   border: none;
+   font-size: 50px;
+   border-radius: 50px;
+   cursor: pointer;
+   }
+ 
+ 
+ 
+
+  
+  
+    /***************************** formulario************************************/
+  .radio-group, .checkbox-group{
+    margin-top: 10px;
+    margin-right: 5%;
+ 
+  }
+  .radio-group label, .checkbox-group label{
+    font-weight: normal;
+    display: flex;
+    align-items:center;
+    gap: 10px;
+    font-size: 14px;
+  }
+  .form-contenedor{
+    background-color: #00669F ;
+    color:#f5f5f5;
+    border-radius: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 700px;
+    padding: 20px;
+  }
+ /*
+  form{
+    background-color: #00669F;
+    color: #f5f5f5;
+ 
+  }*/
+ 
+  form{
+    background-color: #00669F;
+ 
+  }
+  .form-row{
+    display: flex;
+    gap: 50px;
+    padding-top: 10px;
+    margin-right: 70px;
+    padding-bottom: 10px;
+    width: 100%;
+    background-color: #00669F;
+ 
+    
+  }
+  
+  form label{
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+ 
+  }
+  form h1,p {
+    text-align: center;
+    
+  }
+ 
+  form button{
+    background-color: #1CD1B0;
+  }
+ 
+  input[type="text"],
+  input[type="date"],
+  select,
+  textarea,
+  input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 14px;
+    margin-top: 3%;
+ 
+  }
+  textarea{
+    height: 250px;
+    resize: none;
+  }
+   hr{
+    margin: 20px 0;
+   }
+  form button{
+    border: none;
+    width: 70%;
+    font-size: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 2%;
+    font-weight: bold;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  form button:hover{
+    background-color:#1ad2a3; 
+  }
+ 
+  .form-row > div{
+    flex: 1; 
+  }
+ 
+ /* RESPONSIVA*/
+ @media (max-width: 768px) {
+  .form-contenedor {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    margin-top: 30px;
+  }
+ 
+  .form-row {
+    flex-direction: column;
+    gap: 15px;
+    margin-right: 0;
+  }
+ 
+  input[type="text"],
+  input[type="date"],
+  select,
+  textarea,
+  input[type="file"] {
+    font-size: 16px;
+  }
+ 
+  .div-volver {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+ 
+  .btn-volver {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+  }
+ }
+ 
+ /*********************************/
+ 
+ 
+ 
+ 
+ 
+  /********************************************/
+ 
+  .btn-mas{
+    position: fixed;
+   top: 600px;
+   right: 10px;
+   background-color: #00669F;
+   color: white;
+   width: 62px;
+   height: 62px;
+   border: none;
+   font-size: 50px;
+   border-radius: 50px;
+   cursor: pointer;
+  }
+  .div-volver{
+    position: static;
+   
+  }
+   .btn-volver{
+    background-color: #00669F;
+   color: white;
+   width: 62px;
+   height: 62px;
+   border: none;
+   font-size: 50px;
+   border-radius: 50px;
+   cursor: pointer;
+   }
+ 
+
+.form-row{
+  display: flex;
+  gap: 50px;
+  padding-top: 10px;
+  margin-right: 70px;
+  padding-bottom: 10px;
+  width: 100%;
+  background-color:#00669F;
+
+  
+}
+
+form label{
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+
+}
+form h1,p {
+  text-align: center;
+  
+}
+
+form button{
+  background-color: #1CD1B0;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea,
+input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  box-sizing: border-box;
+  font-size: 14px;
+  margin-top: 3%;
+
+}
+textarea{
+  height: 250px;
+  resize: none;
+}
+ hr{
+  margin: 20px 0;
+ }
+form button{
+  border: none;
+  width: 70%;
+  font-size: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 2%;
+  font-weight: bold;
+  margin-bottom: 2%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+form button:hover{
+  background-color:#1ad2a3; 
+}
+
+.form-row > div{
+  flex: 1; 
+}
+
+/* RESPONSIVA*/
+@media (max-width: 768px) {
+.form-contenedor {
+  width: 90%;
+  height: auto;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.form-row {
+  flex-direction: column;
+  gap: 15px;
+  margin-right: 0;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea,
+input[type="file"] {
+  font-size: 16px;
+}
+
+.div-volver {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.btn-volver {
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+}
+}
+
+/*********************************/
+
+
+
+
+
+/********************************************/
+
+.btn-mas{
+  position: fixed;
+ top: 600px;
+ right: 10px;
+ background-color: #00669F;
+ color: white;
+ width: 62px;
+ height: 62px;
+ border: none;
+ font-size: 50px;
+ border-radius: 50px;
+ cursor: pointer;
+}
+.div-volver{
+  position: static;
+ 
+}
+ .btn-volver{
+  background-color: #00669F;
+ color: white;
+ width: 62px;
+ height: 62px;
+ border: none;
+ font-size: 50px;
+ border-radius: 50px;
+ cursor: pointer;
+ }
+
+
+
+
+
+
+
+
+ 
 /* TODO Issue 2: crear reset CSS base + regla universal box-sizing */
 /* Sugerencia: resetear margin/padding en elementos base y aplicar `* { box-sizing: border-box; }` */
 
