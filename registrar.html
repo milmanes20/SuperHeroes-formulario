@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Heroe-Ingresar</title>
+    <title>Heroe-Registrar</title>
     <!-- referenciar fuente google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,24 +26,35 @@
     </header>
     <main>
         <div class="form-contenedor">
-            <p>Ingrese con sus credenciales</p>
-            <form action="" method="post">
-
+            <form action="./ingresar.html" method="post">
+                <p>Registrar cuenta </p>
                 <div>
-                    <label for="usuario">Usuario</label>
-                    <input type="text" id="usuario" name="usuario" required>
+                   <label for="usuario"> ingrese usuario</label>
+                   <input type="text" name="usuario" required>
                 </div>
-                <div>   
-                    <label for="contrasenia"> Contraseña</label>
-                    <input type="password" id="contasenia" name="contrasenia" required>
-                </div>
+                <p>
+                   <label for="email">Ingrese email</label>
+           <input type="email" name="email" id="email" required>
+                </p>
+                <p>
+                    <label for="email2">ingrese email neuvamente</label>
+                    <input type="email" name="email2" id="email2" placeholder="ejemplo@ejemplo.com" required>
+                </p>
+                <p>
+                    <label for="contrasenia">Ingrese contraseña</label>
+                    <input type="password" name="contrasenia" id="contrasenia" required>
+                </p>
+                <p>
+                    <label for="contrasenia2">Ingrese nuevamente la contraseña</label>
+                    <input type="password" name="contrasenia2" id="contrasenia2" required>
+                </p>
                 <hr>
-                    <button type="submit"> Ingresar</button>
-                
-                
-             </form>
+             <button type="submit">Registrar </button>
+            </form>
+           
+
         </div>
-     
+ 
     </main>
     <footer>
       <p>Todos los derechos reservados - Marco Castillo Cabrera</p>
