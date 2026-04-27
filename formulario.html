@@ -1,127 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Heroes-Formulario</title>
-    <link rel="stylesheet" href="./css/style.css">
-   <!-- referenciar fuente google font -->
-   <link rel="preconnect" href="https://fonts.googleapis.com" />
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-   <link
-     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-     rel="stylesheet"
-   />
-</head>
-<body>
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- referenciar fuente google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <div class="top-bar">Descuentos 20%</div>
-        <h2> DC Heroes</h2> 
-        <div class="con-reg-ing">
-            <a href="./index.html">Home</a>
-            <a href="./Contacto">Contacto</a>
-            <a href="./registrar.html">Registrarme</a>
-            <a href="./ingresar.html">Ingresar</a>
-          </div>
-      </header>
- <main>
-    <div  class="div-volver">
+      <div class="top-bar">Descuentos 20%</div>
+      <h2>DC Heroes</h2>
+      <div class="con-reg-ing">
+        <a href="./index.html">Home</a>
+        <a href="./Contacto">Contacto</a>
+        <a href="./registrar.html">Registrarme</a>
+        <a href="./ingresar.html">Ingresar</a>
+      </div>
+    </header>
+    <main>
+      <div class="div-volver">
         <a href="./index.html">
-            <button title="Volver" class="btn-volver">
-                <
-            </button>
+          <button title="Volver" class="btn-volver"><</button>
         </a>
-        
-    </div>
-     <div class="form-contenedor">
-        
-        
-        <FORM action="" method="get">
-            <h1>Añadir Super!</h1>
-        <p>Agrega tu persona favorito completando las opciones</p>
-            <div class="form-row">
-              <div>
-                <label for="nombre"> *Nombre</label>
-             <input type="text" name="nombre" id="nombre" required>
-              </div>  
-             <div>
-                <label for="especie">*Especie</label>
-                <select name="especie" id="especie" required>
-                   <option value=""></option>
-                    <option value="humano">Humano</option>
-                    <option value="alien">Extraterrestre</option>
-                    <option value="mutan">Mutante</option>
-                    <option value="god">Dios</option>
-                </select>
-             </div>
-             
+      </div>
+      <div class="form-contenedor">
+        <form action="" method="get">
+          <h1>Añadir Super!</h1>
+          <p>Agrega tu persona favorito completando las opciones</p>
+          <div class="form-row">
+            <div>
+              <label for="nombre"> *Nombre</label>
+              <input type="text" name="nombre" id="nombre" required />
             </div>
-            <div class="form-row">
-             <div>
-                <label for="fecha">Fecha</label>
-                <input type="date" name="fecha" id="fecha">
-                
-             </div>
-             <div>
-                <label for="photo">Agregar foto</label>
-                <input type="file" name="photo" id="photo" accept=".jpg">
-        
-             </div>
-             
-     
+            <div>
+              <label for="especie">*Especie</label>
+              <select name="especie" id="especie" required>
+                <option value=""></option>
+                <option value="humano">Humano</option>
+                <option value="alien">Extraterrestre</option>
+                <option value="mutan">Mutante</option>
+                <option value="god">Dios</option>
+              </select>
             </div>
-             
-             <div class="form-row">
-                <div>
-                    <textarea placeholder="Dscripción" name="description" id="description"></textarea>
-                   
-                </div>
-                <div>
-                    <div class="checkbox-group">
-                        <label for="poder">Poderes</label>
-                        <label ><input type="checkbox" name="poder" id="poder" value="volar"> Volar</label> 
-                        <label ><input type="checkbox" name="poder" id="poder" value="Superinteligencia">Superinteligencia </label>
-                        <label ><input type="checkbox" name="poder" id="poder" value="billetera gorda">Billetera gorda </label>
-                        <label ><input type="checkbox" name="poder" id="poder" value="vista de rayos layer">Vista rayos laser</label>
-                        
-    
-                    </div>
-                    <hr>
-                    <div class="radio-group">
-                        <label for="personaje">Tipo de personaje</label>
-                         <label ><input type="radio" name="personaje" id="personaje">Héroe / Heroina</label>
-                         <label ><input type="radio" name="personaje" id="personaje"> Villano / Villana </label>
-            
-                    </div>
+          </div>
+          <div class="form-row">
+            <div>
+              <label for="fecha">Fecha</label>
+              <input type="date" name="fecha" id="fecha" />
+            </div>
+            <div>
+              <label for="photo">Agregar foto</label>
+              <input type="file" name="photo" id="photo" accept=".jpg" />
+            </div>
+          </div>
 
-                </div>
-                
-                
+          <div class="form-row">
+            <div>
+              <textarea
+                placeholder="Dscripción"
+                name="description"
+                id="description"
+              ></textarea>
+            </div>
+            <div>
+              <fieldset class="checkbox-group">
+                <legend>
+                    Poderes
+                </legend>
+                <label><input type="checkbox" name="poder" id="poder-volar" value="volar"> Volar</label>
+                <label><input type="checkbox" name="poder" id="poder-inteligencia" value="superinteligencia"> Superinteligencia</label>
+                <label><input type="checkbox" name="poder" id="poder-billetera" value="billetera gorda"> Billetera gorda</label>
+                <label><input type="checkbox" name="poder" id="poder-laser" value="vista de rayos laser"> Vista rayos láser</label>
+              </fieldset>
 
-             </div>
-             
-             <button type="submit">Añadir</button>
-           </FORM>
+              <div class="checkbox-group">
+                <label for="poder">Poderes</label>
+                <label><input type="checkbox" name="poder" id="poder" value="volar"/> Volar</label>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="poder"
+                    id="poder"
+                    value="Superinteligencia"
+                  />Superinteligencia
+                </label>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="poder"
+                    id="poder"
+                    value="billetera gorda"
+                  />Billetera gorda
+                </label>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="poder"
+                    id="poder"
+                    value="vista de rayos layer"
+                  />Vista rayos laser</label
+                >
+              </div>
+              <hr />
+              <fieldset class="radio-group">
+                <legend>Tipo de personaje</legend>
+                <label><input type="radio" name="personaje" id="heroe" value="heroe"> Héroe / Heroína</label>
+                <label><input type="radio" name="personaje" id="villano" value="villano"> Villano / Villana</label>
+              </fieldset>
 
-    </div>
-     
+              <div class="radio-group">
+                <label for="personaje">Tipo de personaje</label>
+                <label
+                  ><input type="radio" name="personaje" id="personaje" />Héroe /
+                  Heroina</label
+                >
+                <label
+                  ><input type="radio" name="personaje" id="personaje" />
+                  Villano / Villana
+                </label>
+              </div>
+            </div>
+          </div>
 
-  
+          <button type="submit">Añadir</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p>Todos los derechos reservados - Marco Castillo Cabrera</p>
 
- 
- </main>
- <footer>
-      
-    <p>
-      Todos los derechos reservados - Marco Castillo Cabrera
-    </p>
-      
-    
-    
-    <div class="git">
-      <h2>GitHub</h2>
-    </div>
-  </footer>
-
-</body>
+      <div class="git">
+        <h2>GitHub</h2>
+      </div>
+    </footer>
+  </body>
 </html>
